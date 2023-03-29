@@ -1,0 +1,32 @@
+<html>
+<head>
+<Title> Trabajo Practico N°8 </title>
+<link rel="stylesheet" type="text/css" href="css/STyles.css">
+<script>
+        function validacion(){
+		var nombre = document.formulario.fnombre.value;  
+		var contra = document.formulario.fcontraseña.value;  
+		if((nombre == "Agustin Anichini" || nombre == "Agustin Anichini") && contra == "072401"){
+		setTimeout(function() {window.location = "https://spoiler.bolavip.com/__export/1604092166517/sites/bolavip/img/2020/10/30/diego_maradona_series_peliculas_documentales_crop1604092147010.jpg_1902800913.jpg" });
+		}else{
+                    alert("la contraseña o el usuario no es correcto");
+            }
+}
+</script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div>
+    <form name="formulario" action="" onsubmit="return(validacion())">
+		<label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="fnombre" required>
+
+		<label for="pass">Contraseña:</label>
+        <input type="password" id="pass" name="fcontraseña" required>
+		<button type="submit">Ingresar</button> 
+</form>
+</div>
+</body>
+</html>
